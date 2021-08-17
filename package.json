@@ -1,9 +1,11 @@
 {
+  "homepage": "http://criticalnameerror.github.io/react-countdown",
   "name": "react-countdown",
   "version": "0.0.1",
   "description": "React Countdown till Christmas",
   "repository": "https://github.com/kristinbaumann/react-countdown",
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "react-scripts": "0.8.4"
   },
   "dependencies": {
@@ -11,6 +13,8 @@
     "react-dom": "^16.4.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
